@@ -5,6 +5,8 @@ import { useRecoilState } from "recoil";
 import { pokemonsState } from "./store/pokemons";
 import axios from "axios";
 import PokemonCardList from "./components/PokemonCardList";
+import styled from "styled-components";
+// import Header from "./components/layout/Header";
 
 function App() {
   const [pokemons, setPokemons] = useRecoilState(pokemonsState);
@@ -29,11 +31,7 @@ function App() {
     console.log(pokemons);
   }, [pokemons]);
 
-  return (
-    <div className="flex flex-col h-screen justify-center items-center bg-slate-100">
-      <PokemonCardList pokemons={pokemons} />
-    </div>
-  );
+  return <PokemonCardList pokemons={pokemons} />;
 }
 
 export default App;
