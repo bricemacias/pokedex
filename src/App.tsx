@@ -30,7 +30,7 @@ function App() {
   }, [pokemons]);
 
   return (
-    <AppContainer className="bg-slate-100">
+    <AppContainer>
       <Header className="bg-orange-100 h-20 flex justify-center items-center">
         This is the header
       </Header>

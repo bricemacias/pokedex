@@ -9,7 +9,7 @@ type PokemonCardListProps = {
 
 const PokemonCardList = ({ pokemons }: PokemonCardListProps) => (
   <Container
-    className="overflow-y-scroll w-full p-20 bg-slate-100"
+    className="overflow-y-scroll w-full p-20"
     style={{
       display: "grid",
       gridTemplateColumns: "repeat(auto-fill, 400px)",
